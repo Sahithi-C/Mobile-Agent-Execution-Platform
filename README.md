@@ -50,8 +50,7 @@ If the agent returns from the function that was invoked upon a migration (includ
 (4) Invoke an RMI call. 
 (5) Kill this agent with Thread.currentThread( ).stop( ), which is deprecated but do so anyway.
 
-## Place.main( String args[] ) performs the following tasks: 
-
+**Place.main( String args[] ) performs the following tasks:** 
 (1) Read args[0] as the port number and checks its validity. 
 (2) Invoke startRegistry( int port ). 
 (3) Instantiate a Place object. 
