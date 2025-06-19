@@ -39,13 +39,11 @@ If the agent returns from the function that was invoked upon a migration (includ
 8. public byte[] getByteCode( ) Reads this agent's byte code from the corresponding file.
 9. private byte[] serialize( ) Serializes this agent into a byte array.
 
-## Agent.run( ) performs the following tasks: 
-
+**Agent.run( ) performs the following tasks:** 
 (1) Find the method to invoke, through this.getClass( ).getMethod( ). 
 (2) Invoke this method through Method.invoke( ). 
  
-## Agent.hop( String hostname, String function, String[] args ) performs the following tasks: 
-
+**Agent.hop( String hostname, String function, String[] args ) performs the following tasks:** 
 (1) Load this agent’s byte code into the memory. 
 (2) Serialize this agent into a byte array. 
 (3) Find a remote place through Naming.lookup( ). 
@@ -59,8 +57,7 @@ If the agent returns from the function that was invoked upon a migration (includ
 (3) Instantiate a Place object. 
 (4) Register it into rmiregistry through Naming,rebind( ). 
  
-## Place.transfer( String classname, byte[] bytecode, byte[] entity ) performs the following tasks: 
-
+**Place.transfer( String classname, byte[] bytecode, byte[] entity ) performs the following tasks:** 
 (1) Register this calling agent’s classname and bytecode into AgentLoader. 
 (2) Deserialize this agent’s entity through deserialize( entity ). 
 (3) Set this agent’s identifier if it has not yet been set. New agent id is given by having each Place maintain a sequencer, to generate a unique 
