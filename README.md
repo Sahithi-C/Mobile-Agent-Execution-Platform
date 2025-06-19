@@ -4,8 +4,7 @@ This project implements a mobile-agent execution platform that is in general fac
 
 ## Introduction:
 
-A user must derive an application-specific mobile agent from the Mobile.Agent base class that is instantiated as an independent thread at run time. Her/his mobile agent must implement at least two 
-methods: 
+A user must derive an application-specific mobile agent from the Mobile.Agent base class that is instantiated as an independent thread at run time. The mobile agent must implement at least two methods: 
 
 i) the constructor receiving a String array and 
 
